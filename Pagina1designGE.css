@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'font';
+    src: url('fontLibrary3am.otf') format('opentype');
+}
+
+html, body {
+    background-image: url('GenderEqualitySfondo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Startpart {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.titolo {
+    font-family: 'font', sans-serif;
+    font-weight: bold;
+    font-size: 85px;
+}
+.testo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.Startbtn {
+    margin-top: 50px;
+}
+.btn {
+    width: 75%;
+}

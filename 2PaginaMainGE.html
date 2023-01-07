@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.118.3/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <link rel="stylesheet" href="Pagina2designGE.css">
+  <link rel="stylesheet" href="Pagina2mediadesignGE.css">
+  <title>Gender Equality</title>
+</head>
+<body>
+  <header>
+    <div class="contenitore-bar">
+      <div class="NavBar fixed-top">
+      <div class="buttons">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item bg-transparent p-0">
+            <a class="bttn" href="#Home">
+              <button class="NavBtn"> <!--home-->
+                <svg id="0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-door icons" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item bg-transparent p-0">
+            <a class="bttn" href="#part1">
+              <button class="NavBtn"> <!--1-->
+                <svg id="1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-1-circle icons" viewBox="0 0 16 16">
+                  <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item bg-transparent p-0">
+            <a class="bttn" href="#part2">
+              <button class="NavBtn"> <!--2-->
+                <svg id="2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-2-circle icons" viewBox="0 0 16 16">
+                  <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item bg-transparent p-0">
+            <a class="bttn" href="#part3">
+              <button class="NavBtn"> <!--3-->
+                <svg id="3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-3-circle icons" viewBox="0 0 16 16">
+                  <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item bg-transparent p-0">
+            <a class="bttn" href="#part4">
+              <button class="NavBtn"> <!--4-->
+                <svg id="4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-4-circle icons" viewBox="0 0 16 16">
+                  <path d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item bg-transparent p-0">
+            <a class="bttn">
+              <button class="NavBtn" id="bttn5"> <!--lista/5-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list icons" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    
+    <!-- crea il modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- inserisci qui il contenuto del modal -->
+      </div>
+    </div>
+
+    <div class="separatore" id="partHome"></div>
+    <div class="partHome">
+      <div class="box-home">
+        <div class="hover-intro hide-intro">
+          <div class="lista-sezioni">
+            <h3 class="testo-lista-sez hide">Definizione di Gender Equality</h3>
+            <h3 class="testo-lista-sez hide">Cos'è il Gender Gap</h3>
+            <h3 class="testo-lista-sez hide">Cos'è il Gender Pay Gap</h3>
+            <h3 class="testo-lista-sez hide">La situazione nel mondo e in Italia</h3>
+          </div>
+        </div>
+        <div class="col1 px-4">
+          <img class="logo hide-opposto" src="GenderEqualityLogo.PNG" alt="logo">
+          <div class="divisore"></div>
+        </div>
+      </div>
+    </div>
+    <div class="separatore" id="part1"></div>
+    <div class="part1">
+      <div class="definizione hide">
+        <div id="domanda1">
+          <h1 class="question"><strong>Per cosa si intende "Gender Equality" ?</strong></h1>
+          <p class="answer"> 
+            Gender Equality, tradotto letteralmente dall'inglese, significa <span class="ugualianza">ugualianza di genere</span> . 
+            E' un concetto che si riferisce alla <span class="ugualianza">parità dei diritti e delle opportunità</span> tra donne e uomini. Si occupa di una vasta
+            gamma di temi, vediamo i principali: 
+          </p>
+        </div>
+      </div>
+      <div class="container hide">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center text-dark text-center p-0">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h3 class="box-titolo">ECONOMIA</h3>
+                <img class="flip-card-img" src="GenderEqualityEconomia.jpg" alt="Economia">
+              </div>
+              <div class="flip-box-back">
+                <div class="col">
+                  <div class="card mb-4 shadow-sm" >
+                    <div class="card-header py-2">
+                      <h4 class="my-0 fw-normal">ECONOMIA</h4>
+                    </div>
+                    <div class="card-body p-0 m-0">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>
+                          La parità di genere può contribuire a una cresita economia più sotenibile, a una maggiore produttività e competitività
+                          <li><hr class="list-divider m-1"></li>
+                          Ciò viene dimostrato da numerosi studi, hanno evidenziato come la società abbia avuto un rendimento economico maggiore sostenendo l'ugualianza di genere
+                          <li><hr class="list-divider m-1"></li>
+                          L'<span class="ocse">OCSE</span> ha dimostrato che l'occupazione di genere femminile può contribuire alla crescita economica
+                          <li><hr class="list-divider m-1"></li>
+                          L' <span class="ilo">ILO</span> ha dimostrato che si ha una maggior produttività promuovendo l'ugualianza di genere
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h3 class="box-titolo">EDUCAZIONE</h3>
+                <img class="flip-card-img" src="GenderEqualityEducazione.jpg" alt="GenderEqualityEducazione">
+              </div>
+              <div class="flip-box-back">
+                <div class="col">
+                  <div class="card mb-4 shadow-sm">
+                    <div class="card-header py-2">
+                      <h4 class="my-0 fw-normal">EDUCAZIONE</h4>
+                    </div>
+                    <div class="card-body pb-0">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>
+                          E' importante che nell'ambito dell'istruzione e della formazione si promuova l'ugualianza di genere,
+                          soprattutto nella scelta dei percorsi di studio e delle professioni.
+                          <li><hr class="list-divider m-1"></li>
+                          Molte donne vengono condizionate dall'idea che possano seguire solo percorsi di studio "tradizionali" 
+                          visto il loro genere.
+                          <li><hr class="list-divider m-1"></li>
+                          Ugualmente per gli uomini, che vengono incoraggiati ad intraprendere percorsi di studio
+                          tecnico e scientifico
+                          <li><hr class="list-divider m-1"></li>
+                          Ciò genera steriotipi di genere nellà società
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h3 class="box-titolo">POLITICA</h3>
+                <img class="flip-card-img" src="GenderEqualityPolitica.webp" alt="GenerEqualityPolitica">
+              </div>
+              <div class="flip-box-back">
+                <div class="col">
+                  <div class="card mb-4 shadow-sm ">
+                    <div class="card-header py-2">
+                      <h4 class="my-0 fw-normal">POLITICA</h4>
+                    </div>
+                    <div class="card-body py-0 my-0">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>
+                          Nella politica è ancor più fondamentale. Può contribuire ad una maggiore rappresentatività e a decisioni più eque
+                          <li><hr class="list-divider m-1"></li>
+                          Perciò è importante garantire che le donne abbiano le stesse opportunità di partecipare alla vita politica e decisionale
+                          <li><hr class="list-divider m-1"></li>
+                          Soprattutto bisogna promuovere la parità di rappresentanza nei processi elettorali e nella composizione dei parlamenti e governi
+                          <li><hr class="list-divider m-1"></li>
+                          Spesso le donne hanno meno opportunità di partecipare e a influire sulle politiche pubbliche
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="answer hide text-center">
+          Si tratta di un argomento di grande importanza per <span class="ugualianza">l'emancipazione e 
+            l'ugualianza</span> di tutti i membri della società <br> <br>
+        </p>
+        <p class="answer hide-opposto mb-5 pb-5">
+          "Gender Equality" è un termine che si utilizza per descrivere il <span class="ugualianza">
+          trattamento e le opportunità uguali</span> per tutti i generi. La <span class="red"><strong>disuguaglianza
+          di genere</strong></span> è un importante <span class="ugualianza">problema socio-economico</span>, 
+          poichè riguarda persone di tutte le età ed etnie. <br>
+          Inoltre, essendo di fatto un argomento di genere comune, bisogna ridurre il fenomeno noto come 
+          <span class="ugualianza">"Gender Gap"</span> (per sapere di più vai alla sezione 2)
+        </p>
+        <div class="definizione1">
+          <h1 class="question hide-opposto"><strong>Ma perche' bisogna sensibilizzare tale tema?</strong></h1>
+          <p class="answer text-align-center hide-opposto"> 
+            Perché per quanto lo si possa negare in molti paesi del mondo, purtroppo,
+            <strong class="ugualianza">ESISTE!</strong> <br>
+          </p>
+          <div class="contenitore-risposta">
+            <div class="answer hide">
+              <p>
+                Sensibilizzare l'uguaglianza di genere significa <span class="ugualianza">consapevolizzare 
+                l'importanza della parità di genere</span> e dei problemi che possano sorgere dalla 
+                disuguaglianza. Codesto argomento può aiutare la società a sostenere un' 
+                <span class="ugualianza">inclusività maggiore</span>, con decisioni più eque.
+              </p> 
+            </div> 
+          </div>
+          <div class="answer hide-opposto">
+            <p class="text-align-start">
+              Inoltre, è importante rendere la società in un <span class="ugualianza">ente inclusivo che 
+              riduca le disparità sociali ed economiche</span>. Può anche aumentare la comprensione e 
+              il rispetto per le diversità dei generi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separatore" id="part2"> PARTE 2 - Gender Gap(?)</div>
+    <div class="part2">
+      <div class="contenitore">
+        <div class="chart-descr hide">
+          <div class="testo-grafico">
+            <h1>ciao io sono ashley</h1>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="grafico hide-opposto">
+            <div class="chart text-center">
+              <h5>Quota assunzioni nel ruolo di Leadership: 2016 - 2022</h5>
+            </div> <br>
+            <canvas id="myChart" height="250"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separatore" id="part3"> PARTE 3 - GENDER PAY GAP (?)</div>
+    <div class="part3">
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+      ciao <br>
+    </div>
+    <div class="separatore" id="part4"> PARTE 4 - Nel mondo (?) IN FASE DI SVILUPPO :))))</div>
+    <div class="part4">
+      <div class="mappa-mondo">
+        <img width="50%" src="mappa-mondo.png" alt="Mappa Mondo">
+      </div>
+      <div class="contenitore">
+        <div class="charts">
+          <div class="grafico hide">
+            <div class="chart text-center">
+              <h5>Gender Gap - Diminuzione Gender Gap percentuale dei Continenti</h5>
+            </div> <br>
+            <canvas id="barChart" height="250"></canvas>
+          </div>
+        </div>
+        <div class="chart-descr hide-opposto">
+          <div class="testo-grafico">
+            <h1>ciao io sono ashley</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Il coso della percentuale
+      <div class="grafici">
+        <button class="btn-percent">
+          <div class="box">
+            <div class="percent">
+              <svg class="svg">
+                <circle class="circle" cx="45" cy="45" r="45"></circle>
+                <circle class="circle n-america" cx="45" cy="45" r="45"></circle> 
+              </svg>
+              <div class="number">
+                <h2 class="h2"> 76.9 <span class="span">%</span></h2>
+              </div>
+            </div>
+            <h2 class="text h2">Nord America</h2>
+          </div>
+        </button>
+      </div>
+      <div class="dim-grafico">
+      </div>-->
+  </main>
+
+  <script src="Pagina2FunctionGE.js"></script>
+</body>
+</htm

@@ -1,5 +1,6 @@
-〜 $ git clone https://avocatocipolletto//Panda_42.github.io
-〜 $ echo Panda_42.github.io > 1PaginaStartGe.html
+〜 $ git clone https://Panda_42//Panda_42.github.io
+〜 $ cd Panda_42.github.io
+〜 $ echo "Start" > 1PaginaStartGe.html
 〜 $ add --all
 〜 $ git commit -m "Initial commit"
 〜 $ git push -u origin main
